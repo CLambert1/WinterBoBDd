@@ -8,7 +8,6 @@ Paper available direclty from publisher's site at XXX or from hal/researchgate/s
 either use two subdirectories : Supplement & Codes
 or use one single repository, with result figures (suppl fig from draft) within their corresponding subfolder on results_scripts
 
-see exemple repo from Matthieu for rouby et al 22 : https://gitlab.univ-lr.fr/mauthier/cdptmbycatch
 
 
 
