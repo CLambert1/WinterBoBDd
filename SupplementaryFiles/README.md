@@ -23,7 +23,7 @@ Predictions of common dolphin distribution - Daily model
 For the purpose of the study, we built a daily model of dolphin distribution, providing daily predictions. This model was our reference, used for the three main objectives of the study. Here, we present the day-to-day predicted maps (ind./m²) alongside the time series of averaged estimated densities (in black solid line), the associated averaged uncertainty (in black dotted line) and the estimated extrapolation level of the prediction map (in red solid line). The density and uncertainty time series are the averages of the daily maps.
 ![GIF daily predictions](https://github.com/CLambert1/WinterBoBDd/blob/main/SupplementaryFiles/DailyModel_Prediction_Uncertainty_Winter.gif)
 
-We also computed the degree of extrapolation for each day (see main text), as a mean to quantify the distance of the prediction from the data used to fit the model (with regards to the sampled conditions). The dark grey areas are interpolations area (that is, the occurring conditions have been sampled in the model), the lighter grey areas are extrapolation areas (that is, the occurring conditions have *not* been sampled):  
+We also computed the degree of extrapolation for each day (see main text), as a mean to quantify the distance of the prediction from the data used to fit the model (with regards to the sampled conditions). The dark grey areas are interpolations areas (that is, the occurring conditions have been sampled in the model), the lighter grey areas are extrapolation areas (that is, the occurring conditions have *not* been sampled):  
 ![GIf daily extrapolation](https://github.com/CLambert1/WinterBoBDd/blob/main/SupplementaryFiles/DailyModel_Extrapolation_Winter.gif)
 
 From these daily extrapolation maps, we can see predictions within some areas are systematically interpolations (in blue), while some are always extrapolated values: 
@@ -33,7 +33,7 @@ From these daily extrapolation maps, we can see predictions within some areas ar
 Predictions of common dolphin distribution - Seasonal model
 ---------
 For the purpose of the study, we also fitted a challenger model assuming no spatio-temporal variations in dolphin distribution throughout the winter (see main text for details). This model was fitted using winter-scale means and standard deviations of the same variables as depicted above. We can see the dolphin distribution (ind./km²) is predicted to be different during the two winters. The figure also display the model-associated uncertainty (middle panels) and the extrapolation level (right panels; dark grey = interpolation; light grey = extrapolation): 
-![Extrapolation from the seasonal model](https://github.com/CLambert1/WinterBoBDd/blob/main/SupplementaryFiles/Winter_maps.png)
+![Extrapolation from the seasonal model](https://github.com/CLambert1/WinterBoBDd/blob/main/SupplementaryFiles/Seasonal_model_maps.png)
 
 
 
