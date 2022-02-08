@@ -1,3 +1,7 @@
+# Author: Mathieu Genu, Dr Matthieu Authier & Dr Charlotte Lambert
+# These functions are now implemented within the pelaDSM package
+
+
 #' Standardization of effort data column names.
 #'
 #' Attribute standard names to column names of effort data.frame
@@ -154,7 +158,7 @@ clean_effort_dsm <- function(effort_base, multi_survey = FALSE, unit_km = TRUE){
 
     # # Delete "lon" and "lat" columns (we build them with prepare_functions)
     # if("lon" %in% colnames(effort_base)) {
-    #   effort_base <- effort_base %>% dplyr::select(-lon) # ne modifie pas dans gitlab, car normalement les packages annexes sont chargés quand charge pelaDSM (ce qui ne marche pas ici pour le moment
+    #   effort_base <- effort_base %>% dplyr::select(-lon) # ne modifie pas dans gitlab, car normalement les packages annexes sont chargÃ©s quand charge pelaDSM (ce qui ne marche pas ici pour le moment
     # }
     # if("lat" %in% colnames(effort_base)) {
     #   effort_base <- effort_base %>% dplyr::select(-lat)
