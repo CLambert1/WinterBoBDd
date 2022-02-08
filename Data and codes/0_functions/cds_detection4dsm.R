@@ -1,3 +1,6 @@
+# Author: Mathieu Genu, Dr Matthieu Authier & Dr Charlotte Lambert
+# These functions are now implemented within the pelaDSM package
+
 #' @export
 cds_detection <- function(x, ...){
   UseMethod("cds_detection")
