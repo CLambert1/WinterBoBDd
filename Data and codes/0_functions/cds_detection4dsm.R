@@ -1,4 +1,4 @@
-# Author: Mathieu Genu, Dr Matthieu Authier & Dr Charlotte Lambert
+# Author: Mathieu Genu, Dr Matthieu Authier
 # These functions are now implemented within the pelaDSM package
 
 #' @export
