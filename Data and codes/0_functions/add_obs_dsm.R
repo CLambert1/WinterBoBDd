@@ -1,3 +1,6 @@
+# Author: Mathieu Genu, Dr Matthieu Authier & Dr Charlotte Lambert
+# These functions are now implemented within the pelaDSM package
+
 #' Adding observation on effort.
 #'
 #' Adding the number of individuals and the group size on prepared effort data
