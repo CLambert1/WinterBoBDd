@@ -1,15 +1,15 @@
+### Author: Dr Auriane Virgili, Observatoire Pelagis
 
 fit_all_gam <- function(envdata, outcome, predictors, rescale = TRUE,
                         family = "tweedie", esw = NULL, 
                         weight_by_g_naught = 1, splines_by = NULL,
                         max_cor = 0.5, nb_max_pred = 4, nb_min_pred = 1, complexity = 4
 ) {
-  ## outcome = nom de la variable réponse
-  ## esw = nom de la colonne avec l'a surface échantillonnées'esw ; data must have a "Effort" column with length of effort chunks
+  ## outcome = nom de la variable rÃ©ponse
+  ## esw = nom de la colonne avec l'a surface Ã©chantillonnÃ©es'esw ; data must have a "Effort" column with length of effort chunks
   ## complexity = nombre de degre de liberte (sans compter l'offset)
   ## family must be one of "negative binomial", "poisson" or "tweedie"
   ## default is "negative binomial"
-  
   
   ## design matrix
   X <- envdata[, predictors]
