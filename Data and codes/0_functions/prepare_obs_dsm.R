@@ -1,3 +1,6 @@
+# Author: Mathieu Genu, Dr Matthieu Authier & Dr Charlotte Lambert
+# These functions are now implemented within the pelaDSM package
+
 #' @export
 prepare_obs <- function(x, ...) {
   UseMethod("prepare_obs")
