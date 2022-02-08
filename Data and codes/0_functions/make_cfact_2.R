@@ -1,3 +1,6 @@
+# Author: Mathieu Genu & Dr Matthieu Authier
+# These functions are now implemented within the pelaDSM package
+
 #' Assess neighbourhood and extra/intepolations
 #'
 #' @param calibration_data a dataframe. The original data from which a design matrix is to be constructed
