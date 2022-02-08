@@ -1,3 +1,5 @@
+### Authors: Dr Charlotte Lambert & Dr Matthieu Authier
+
 ### simuler une distribution d'animaux dans l'espace
 simul_spat <- function(predgrid,
                        density_map,
@@ -8,7 +10,7 @@ simul_spat <- function(predgrid,
                        verbose = FALSE,
                        soap = TRUE,
                        seed = NULL,
-                       is.raster = FALSE # predgrid & density_map doivent être deja projetees
+                       is.raster = FALSE # predgrid & density_map doivent Ãªtre deja projetees
                        ) {
   if(is.raster == FALSE){
     # predict on a regular grid
@@ -120,7 +122,7 @@ simul_spat <- function(predgrid,
     pts <- as.data.frame(predgrid, xy = T)
     
     # response
-    pixel_surface <- res(density_map)[1] * res(density_map)[2] # comme le raster est projeté, on utilise sa résolution (en m)
+    pixel_surface <- res(density_map)[1] * res(density_map)[2] # comme le raster est projetÃ©, on utilise sa rÃ©solution (en m)
     study_area <- (pixel_surface * ncell(density_map)) #/ 1000000
 
     # average_density_per_m = N / (mean_group_size * study_area)
@@ -129,7 +131,7 @@ simul_spat <- function(predgrid,
     
     # to im object
     # https://rdrr.io/cran/maptools/man/as.ppp.html
-    density_map <- density_map / 1000000 #(pour passer en m²)
+    density_map <- density_map / 1000000 #(pour passer en mÂ²)
     df_map <- as.data.frame(density_map, xy = T)
     df_map <- df_map %>% drop_na()
     
@@ -182,8 +184,8 @@ simul_spat <- function(predgrid,
  }
 
 # distance to line transects and detection process
-detection_process <- function(pts, # spatial point (en sf) projeté
-                              transects, # projeté comme pts
+detection_process <- function(pts, # spatial point (en sf) projetÃ©
+                              transects, # projetÃ© comme pts
                               sigma = NULL, 
                               verbose = FALSE) {
   ## compute distances: with geosphere (use longitude and latitude)
@@ -324,11 +326,11 @@ simul_spat_unif <- function(N = 10000, # taille estimee de la pop
 ###
 simul <- function(predgrid,
                        truth,
-                       is.raster = TRUE, # predgrid & density_map doivent être deja projetees
+                       is.raster = TRUE, # predgrid & density_map doivent Ãªtre deja projetees
                        N_obs,
                        mean_group_size,
                        projection_espg = 2154, # L93
-                       design_transects, # projeté aussi
+                       design_transects, # projetÃ© aussi
                        strip = FALSE,
                        esw = 0.163,
                        soap = TRUE,
@@ -455,7 +457,7 @@ simul <- function(predgrid,
 simul_unif <- function(N_obs,
                   mean_group_size,
                   projection_espg = 2154, # L93
-                  design_transects, # projeté aussi
+                  design_transects, # projetÃ© aussi
                   strip = FALSE,
                   esw = 0.163,
                   soap = TRUE,
