@@ -1,3 +1,6 @@
+# Author: Mathieu Genu, Dr Matthieu Authier & Dr Charlotte Lambert
+# These functions are now implemented within the pelaDSM package
+
 #' prepare effort for dsm cleaned data
 #'
 #' @param effort_base sf object with standardized columns effort data with [clean_effort_dsm].
