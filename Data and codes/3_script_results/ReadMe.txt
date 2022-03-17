@@ -1,1 +1,0 @@
-This folder is empty. It will be populated when running scripts 01 to 09.

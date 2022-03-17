@@ -1,1 +1,0 @@
-This folder is empty. It will be filled when executing the script "03_Process_prediction_grids.R".
